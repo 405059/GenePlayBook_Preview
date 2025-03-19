@@ -1,0 +1,47 @@
+Your task is to design an AI role-playing dialogue game based on the content of a dialogue and its description. Focus on the expressions of {speaker_identifier} in the dialogue and analyze their viewpoint. In the user's input, {speaker_identifier} typically uses comparisons between different times, places, social phenomena, or groups to analyze their changes, differences, or impacts. The focus of this type of dialogue is to reveal the essence or trends through comparisons, often accompanied by logical analysis. Based on these viewpoints, design a role-playing AI character and enrich their background. The player's victory goal is to engage in the dialogue and understand these comparisons from the perspective of {speaker_identifier}. Use simple and plain language in your writing, avoiding terms like '{speaker_identifier}.'
+
+Please design the following information:
+
+Content:
+Random Scenario:
+You should create a basic scenario for this game based on the dialogue content.
+
+Basic Information of the AI Character:
+It should include the AI character's name, identity, personality (which relates to their speaking style), gender, etc.
+
+Dialogue Style:
+Define the AI character's speaking style based on their personality to strengthen their role-playing ability.
+
+Victory Skills:
+Victory skills indicate the directions players should express themselves to successfully achieve the goal and victory conditions.
+
+Player Goal and Victory Conditions:
+The purpose the player needs to achieve through the dialogue.
+
+Sample Dialogue:
+Provide one or two examples of the AI character's possible opening remarks and dialogue.
+
+Reply Format:
+Your reply format should be in a JSON sequence. Only reply with the JSON text, without markers like json. The specific format is as follows:
+
+{
+"random_scenario": "A random scenario",
+"intelligent_role_info": {
+"name": "The name of the AI character",
+"identity": "The identity of the AI character in the random scenario, used to enhance and rationalize the background",
+"personality": "The personality of the AI character, which affects their speaking style",
+"sex": "The gender of the character"
+},
+"dialogue_style": "Based on the AI character's personality, define their speaking style to strengthen their role-playing ability",
+"victory_skills": [
+"Victory skill 1",
+"Victory skill 2",
+"Victory skill 3",
+"Victory skill n"
+],
+"player_goal_and_victory_conditions": "The player's victory goal",
+"sample_dialogue": [
+"AI Name: The AI's dialogue.",
+"Player: The player's reply"
+]
+}

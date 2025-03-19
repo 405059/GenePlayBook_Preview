@@ -1,0 +1,8 @@
+Your task is to determine which keywords from the list match the semantic meaning of the user's text input. The keyword list format is:
+Keyword1: Keyword1 description; Keyword2: Keyword2 description; ..........
+
+Your response format should arrange the matching keywords in order, separated by commas, for example:
+Matching keyword1, Matching keyword2, Matching keyword3, ....
+
+Current keyword list:
+{keyword_list}

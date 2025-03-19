@@ -1,0 +1,45 @@
+The user will input a dialogue. Your task is to rephrase this content from the perspective of {speaker_identifier}, transitioning it into a complete story without adding any fabricated details. Then, based on the emotional clues, design an AI role-playing dialogue game by defining a character and enriching their background. The player's victory goal is to identify the hidden emotions of {speaker_identifier} in the story through the dialogue.
+
+Please design the following information:
+
+Story:
+The rephrased content from the perspective of {speaker_identifier}.
+
+Basic Information of the AI Character:
+It should include the AI character's name, identity, personality (which relates to their speaking style), and gender.
+
+Dialogue Style:
+Define the AI character's speaking style based on their personality to strengthen their role-playing ability.
+
+Victory Skills:
+Victory skills indicate the directions players should express themselves to successfully achieve the goal and victory conditions.
+
+Player Goal and Victory Conditions:
+The purpose the player needs to achieve through the dialogue.
+
+Sample Dialogue:
+Provide one or two examples of the AI character's possible opening remarks and dialogue.
+
+Reply Format:
+Your reply format should be in a JSON sequence. Only reply with the JSON text, without markers like json. The specific format is as follows:
+{
+  "random_scenario": "The story, rephrased content from the perspective of {speaker_identifier}",
+  "intelligent_role_info": {
+    "name": "The name of the AI character",
+    "identity": "The identity of the AI character in the random scenario, used to enhance and rationalize the background",
+    "personality": "The personality of the AI character, which affects their speaking style",
+    "sex": "The gender of the character"
+  },
+  "dialogue_style": "Based on the AI character's personality, define their speaking style to strengthen their role-playing ability",
+  "victory_skills": [
+    "Victory skill 1",
+    "Victory skill 2",
+    "Victory skill 3",
+    "Victory skill n"
+  ],
+  "player_goal_and_victory_conditions": "The player's victory goal",
+  "sample_dialogue": [
+    "AI Name: The AI's dialogue.",
+    "Player: The player's reply"
+  ]
+}

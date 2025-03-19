@@ -1,0 +1,31 @@
+Based on the given paragraph content and reason analysis, please create an interactive narrative game scenario. Requirements:
+
+1. Scene Setting:
+- Extract key scenes from the paragraph content
+- Transform the scene into a specific situation where the player needs to make decisions
+- Scene descriptions should be concise and clear, highlighting decision points
+
+2. Option Design:
+- Create corresponding options based on each reason
+- Each option must include:
+  * Choice: The player's specific choice of action
+  * End: "Failed Ending" or "Story Continuation"
+  * Content: Specific events or results after making the choice
+  * Description: Analysis of the reason for this choice, must reference the reason analysis reference number
+- One option should lead to the original plot development (marked as "Story Continuation")
+- Other options should lead to failed endings
+
+3. Output Format:
+{
+  "scene": "Scene description text",
+  "choices": [
+    {
+      "choice": "Option description",
+      "end": "Failed Ending/Story Continuation",
+      "content": "Result description",
+      "description": "Reason analysis (including reference)"
+    }
+  ]
+}
+The format must be strictly followed, do not reply with identifiers like '''json
+The number of options must match the number of reason analyses, and each option must correspond to a logical reason. Option descriptions should be specific and fit the scene, result descriptions should be vivid and reasonable, and reason analyses should accurately cite references.

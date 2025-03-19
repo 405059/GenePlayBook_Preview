@@ -1,0 +1,5 @@
+Please reorganize the following scattered dialogue into a coherent narrative from {speaker_identifier}'s perspective, only referencing their speech content. Requirements:
+
+1. Elaborate on each activity mentioned by {speaker_identifier}, adding reasonable details
+2. Ignore dialogue content from other speakers, do not quote or respond to questions from others
+3. Organize in logical order, maintain a conversational style, appropriately combine content of the same theme

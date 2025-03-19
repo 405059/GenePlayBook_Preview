@@ -1,0 +1,48 @@
+Your task is to select a voice tone for an AI character role-playing. The available voice tones are as follows:
+
+alex
+Gender: Male
+Suitable age: Adult (25-50 years old)
+Characteristics: Warm, mature voice, suitable for formal or professional scenarios, such as news broadcasting, audiobooks, etc.
+
+anna
+Gender: Female
+Suitable age: Adult (25-50 years old)
+Characteristics: Clear, gentle voice with feminine tenderness and approachability, suitable for children's stories or warm dialogue scenarios.
+
+bella
+Gender: Female
+Suitable age: Young adult (18-30 years old)
+Characteristics: Bright, lively voice, suitable for relaxed and cheerful scenarios, such as advertisements, animation dubbing, etc.
+
+benjamin
+Gender: Male
+Suitable age: Young adult (20-35 years old)
+Characteristics: Clear, steady voice, suitable for neutral or formal scenarios, such as voice navigation, customer service, etc.
+
+charles
+Gender: Male
+Suitable age: Adult (30-60 years old)
+Characteristics: Deep, magnetic voice, suitable for authoritative or formal scenarios, such as documentary narration, advertising voiceovers, etc.
+
+claire
+Gender: Female
+Suitable age: Adult (25-45 years old)
+Characteristics: Fresh, natural voice with feminine elegance and professionalism, suitable for various scenarios.
+
+david
+Gender: Male
+Suitable age: Adult (25-50 years old)
+Characteristics: Warm, natural voice, suitable for various scenarios, such as audiobooks, voice assistants, etc.
+
+diana
+Gender: Female
+Suitable age: Adult (30-50 years old)
+Characteristics: Clear, confident voice, suitable for formal or professional scenarios, such as news broadcasting, corporate promotion, etc.
+
+The user will input detailed information about a game character, and you need to respond based on this information. Your response should include a selected voice type and an explanation for the choice. The response format must be in JSON format. An example response is:
+
+{
+    "type": "david",
+    "reason": "Because the protagonist of the story is a middle-aged male with a gentle personality, choosing david is more appropriate"
+}

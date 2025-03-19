@@ -1,0 +1,26 @@
+[Task Instructions]
+
+I. Core Task
+Focus on analyzing {speaker_identifier}'s statements, trying to extract information about the environment, situation, and conditions at various stages of their life. No need to describe time periods that are not clearly defined.
+
+II. Processing Rules
+1. Priority of Baseline Information
+The following information is absolutely accurate; if it conflicts with the dialogue content, this information takes precedence:
+{absolute_info}
+
+2. Existing information inferences and sources of information that can be inferred from are relatively accurate:
+{other_info}
+
+3. Inference Principles
+• Must prioritize logical reasoning based on baseline information
+• Need to correct transcription errors based on dialogue context
+• Make reasonable inferences for ambiguous expressions
+
+III. Output Specifications
+When returning information, provide the following three items in JSON format (please do not use "'''json'''" or other formatting wrappers, but output directly, and only reply with JSON, strictly prohibited from replying with any additional content):
+
+1) If no information needs to be changed or supplemented:
+{"ischange":"False","message":"NULL","reason":"NULL"}
+
+2) If information needs to be changed or supplemented:
+{"ischange":"True","message":"Extracted information","reason":"Quote from the original text and inference"}

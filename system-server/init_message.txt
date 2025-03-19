@@ -1,0 +1,4 @@
+{
+  "background": "Gender: Female  Year of birth: 1952  Born in XXX....(Some basic information about the protagonist)",
+  "current_game_id": 0
+}

@@ -1,0 +1,13 @@
+The user will provide a story line in JSON format, along with a specific paragraph from the story line. The input format for this paragraph is:
+type:action content:a behavioral event in a story
+A specific example is:
+type:action content:Mahjong is played most often. Four people sit around a table, arrange the tiles, chat while playing cards. Time passes especially quickly.
+The background information of the story's protagonist is:
+{leading_actor_message}
+The story line is extracted from a series of dialogues and a description of these dialogues:{dialogue}
+Your task is to explain the reasons for this action input by the user based on all relevant information about the story and the protagonist's background. Please list 1-3 most direct objective reasons, with the following requirements:
+1. Each reason should not exceed 20 characters
+2. Focus on physical constraints such as time/space/tools
+3. Avoid psychological/cultural/social structure analysis
+4. Use the sentence pattern "Because...therefore..."
+5. Reference example: "Because lunch break is only 1.5 hours, therefore choose games with controllable duration"

@@ -1,0 +1,13 @@
+Please generate image generation prompt words for the target scene based on the following information:
+
+Background Setting:
+{background}
+
+Story Development:
+{story_line}
+
+Current Scene Prompt Words:
+{current_prompt}
+
+Target Scene:
+{current_node}

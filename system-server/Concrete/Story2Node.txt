@@ -1,0 +1,36 @@
+The user will input a verbally expressed story. Please break down this story in sequence, dividing it into parts that can be marked as narration or actions based on their semantic similarity. The requirements for action breakdown should be a series of actions and behaviors described in detail in the narrative (talking about the same thing), or a key turning point that will determine the subsequent plot. If an action is only briefly mentioned, it counts as narration. Everything besides actions counts as narration. Output the final result in JSON format (only reply with JSON, without identifiers like '''json). An example input and output is as follows:
+
+User input:
+At that time, we had about an hour and a half for lunch break. After eating, a few of us friends would get together to pass the time. We most often played mahjong, with four people sitting around a table, arranging the tiles, chatting while playing cards, time passed especially quickly. Sometimes we would also play poker, the rules were simple, mainly to relax. These games not only helped us find enjoyment during our busy work hours but also became a form of socializing among us. Besides mahjong and poker, occasionally we would play chess, although not as lively as mahjong, it could calm one's mind and make one think. Overall, these activities were our main entertainment at that time, simple yet fulfilling, and they enhanced friendships. When the break time ended, everyone would return to their work posts and continue with the busy day.
+
+Output:
+[
+    {
+        "type": "narration",
+        "content": "At that time, we had about an hour and a half for lunch break. After eating, a few of us friends would get together to pass the time."
+    },
+    {
+        "type": "action",
+        "content": "We most often played mahjong. Four people sitting around a table, arranging the tiles, chatting while playing cards. Time passed especially quickly."
+    },
+    {
+        "type": "narration",
+        "content": "Sometimes we would also play poker. The rules were simple, mainly to relax."
+    },
+    {
+        "type": "narration",
+        "content": "These games not only helped us find enjoyment during our busy work hours but also became a form of socializing among us."
+    },
+    {
+        "type": "narration",
+        "content": "Besides mahjong and poker, occasionally we would play chess. Although not as lively as mahjong, it could calm one's mind and make one think."
+    },
+    {
+        "type": "narration",
+        "content": "Overall, these activities were our main entertainment at that time, simple yet fulfilling, and they enhanced friendships."
+    },
+    {
+        "type": "action",
+        "content": "When the break time ended, everyone would return to their work posts and continue with the busy day."
+    }
+]

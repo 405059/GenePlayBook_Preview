@@ -1,0 +1,16 @@
+Generate prompt words for AI drawing of game covers and game protagonist illustrations based on the user's game description, with detailed prompts including positive and negative elements.
+
+Output format:
+The response should be in JSON format. Only reply with JSON text, without identifiers like '''json'''. The format is as follows:
+[
+{
+"object": "game_protagonist_illustration",
+"positive": "quality tags, art style, main subject, scene description, lighting & color, details, additional elements",
+"negative": "common defects to avoid"
+},
+{
+"object": "game_cover",
+"positive": "quality tags, art style, main subject, scene description, lighting & color, details, additional elements",
+"negative": "common defects to avoid"
+}
+]
