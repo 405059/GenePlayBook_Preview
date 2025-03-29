@@ -50,7 +50,7 @@ def chat_bot(messages, bot):
         )
         response = client.chat.completions.create(
             temperature=1.0,
-            model="deepseek-v3",
+            model="qwen-max",
             messages=messages,
             stream=False,
         )
